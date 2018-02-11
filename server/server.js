@@ -1,18 +1,43 @@
-// Generic server.js file. Replace lines of code as needed. Below is simply
-// a generic template from a previous project.
+// Loading required modules
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const calc = require('./modules/calculator');
+const history = require('./modules/history')
 
-// Express code.
-let express = require('express');
-let app = express();
+// Port listening
+const port = process.env.PORT || 5000;
 
-// Tells express where our static content is located.
+// Adding middleware to the stack
 app.use(express.static('server/public'));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Can use any number from 1000 - 99999
-// but don't choose 5432 which is the default for the database.
-const port = 5000;
+// Runs the calculations
+app.post('/calculator', function(req, res) {
+    console.log('/calulator POST hit', req.body);
+    calc.cCalcs(req.body.x, req.body.y, req.body.type);
+    history.addToHistory(req.body.x, req.body.y, req.body.type);
+    res.sendStatus(201);
+});
 
-// Start our server.
+// Tracks and returns history
+app.get('/history', function(req, res) {
+    console.log('history allHistory: ', history.allHistory());
+    res.send(history.allHistory());
+});
+
+// Return calcuations
+app.get('/calculator', function(req, res) {
+    res.send(calc.returnCalc());
+});
+
+// Delete all the things!
+app.delete('/clearAll', function(req, res) {
+    calc.clearAll();
+    history.clearAll();
+    res.send('cleared');
+});
+
 app.listen(port, function() {
     console.log(`Server listening on port ${port}`);
 })

@@ -38,32 +38,33 @@ Anything else you can think of!
 
 ## Project Scoping and Management
 - [x] Created Git Repo, Setup File Structure, Install node modules Express, Body-Parser
-- [ ] Create two inputs for values to be entered
-- [ ] Create buttons for Addition, Subtraction, Multiplication, Division that will show the the results via equals output
-- [ ] Create the event listeners to capture input values
-- [ ] Have the values bundled into an object
-- [ ] Create POST app.post on server
-- [ ] Create module for calculations
-- [ ] Calculation:
-    - [ ] Make it so values of the object are set as variables in order to calculate the return value
-    - [ ] Make the values of Addition, Subtraction, Multiplication, Division set as an if statement to condition out the calculations
-- [ ] Create class that links to creation of the object
-- [ ] Create GET from the server to send the result to the the client side
+- [x] Create two inputs for values to be entered
+- [x] Create buttons for Addition, Subtraction, Multiplication, Division that will show the the results via equals output
+- [x] Create the event listeners to capture input values
+- [x] Have the values bundled into an object
+- [x] Create POST app.post on server
+- [x] Create module for calculations
+- [x] Calculation:
+    - [x] Make it so values of the object are set as variables in order to calculate the return value
+    - [x] Make the values of Addition, Subtraction, Multiplication, Division set as an if statement to condition out the calculations
+- [x] Create class that links to creation of the object
+- [x] Create GET from the server to send the result to the the client side
 - [ ] Create GET from the server to send the response & history as a string to append the DOM
-- [ ] Create clear button to reset/clear:
-    - [ ] History
-    - [ ] Inputs
-- [ ] Make it so the history list doesn't append with each calculation
-- [ ] Make it so the history list so it doesn't load the last items in the array
+- [x] Create clear button to reset/clear:
+    - [x] History
+    - [x] Inputs
+- [x] Make it so the history list doesn't append with each calculation
+- [x] Make it so the history list so it doesn't load the last items in the array
 
 ## Extra Options
 - [ ] Style website
-- [ ] Style buttons
+- [x] Style buttons
+    - [x] Used icomoon font icons to style buttons
 
 ## Hard Mode
 - [ ] Convert the two values inputs to numerical buttons, to allow the user to click on a numerical button and then a mathematical operation, then the numerical button again
-- [ ] Create an equal button that sends all of the information to the server
+- [x] Create an equal button that sends all of the information to the server
 
 ## Pro Mode
-- [ ] Create a button that allows the user to clear history, shouldn't be a GET or POST, but a delete request
+- [x] Create a button that allows the user to clear history, shouldn't be a GET or POST, but a delete request
 - [ ] Allow a user to click on an entry in the history list to re-run that calculation that will display the answer on the calculator interface like a normal calculation
