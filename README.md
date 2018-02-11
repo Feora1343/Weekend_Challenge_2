@@ -49,7 +49,7 @@ Anything else you can think of!
     - [x] Make the values of Addition, Subtraction, Multiplication, Division set as an if statement to condition out the calculations
 - [x] Create class that links to creation of the object
 - [x] Create GET from the server to send the result to the the client side
-- [ ] Create GET from the server to send the response & history as a string to append the DOM
+- [x] Create GET from the server to send the response & history as a string to append the DOM
 - [x] Create clear button to reset/clear:
     - [x] History
     - [x] Inputs

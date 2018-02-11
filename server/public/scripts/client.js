@@ -79,7 +79,7 @@ function getResults() {
 function displayHistory(history) {
     $('#history-list').empty();
     for (let i = 0; i < history.length; i++) {
-        $('#history-list').prepend('<li>' + history[i] + '</li>');
+        $('#history-list').prepend('<li>', '<button class="button-history" id="history-button">' + history[i] + '</button>', '</li>');
     }
 }
 

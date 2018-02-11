@@ -10,7 +10,6 @@
 [class*=" button-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -68,6 +67,15 @@ input {
 }
 
 .result-display {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#history-list {
+    list-style-type: none;
+}
+
+.history {
     margin-bottom: 10px;
     margin-top: 10px;
 }
