@@ -62,7 +62,8 @@ Anything else you can think of!
     - [x] Used icomoon font icons to style buttons
 
 ## Hard Mode
-- [ ] Convert the two values inputs to numerical buttons, to allow the user to click on a numerical button and then a mathematical operation, then the numerical button again
+- [x] Convert the two values inputs to numerical buttons
+    - [x] Allow the user to click on a numerical button and then a mathematical operation, then the numerical button again
 - [x] Create an equal button that sends all of the information to the server
 
 ## Pro Mode
