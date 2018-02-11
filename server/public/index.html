@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<!-- change sources to approriate files and folders in server/public as
-needed. -->
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="vendors/jquery.js" charset="utf-8"></script>
     <script src="scripts/script.js" charset="utf-8"></script>
-    <title></title>
-  </head>
-  <body>
-  </body>
+    <title>Weekend Challenge 2: Calculator</title>
+</head>
+
+<body>
+    <h1>Basic Calculator</h1>
+    <div class="calc">
+        <div class="input">
+            <input type="number" id="first" placeholder="First Number">
+            <div class="math-buttons">
+                <button class="button-addition" id="addition-button">Add</button>
+                <button class="button-subtraction" id="subtraction-button">Minus</button>
+                <button class="button-muliplication" id="muliplication-button">Multiply</button>
+                <button class="button-division" id="division-button">Divide</button>
+            </div>
+            <input type="number" id="second" placeholder="Second Number">
+            <div class="equals-button">
+                <button class="button-equals" id="equals-button">Equals</button>
+            </div>
+            <div class="result-display">Result: <span id="result"></span>
+            </div>
+            <button class="button-eraser" id="eraser-button">History</button>
+        </div>
+        <div class="history">
+            <br>
+            <i class="button-history"></i>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+</body>
+
 </html>
