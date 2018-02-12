@@ -68,4 +68,4 @@ Anything else you can think of!
 
 ## Pro Mode
 - [x] Create a button that allows the user to clear history, shouldn't be a GET or POST, but a delete request
-- [ ] Allow a user to click on an entry in the history list to re-run that calculation that will display the answer on the calculator interface like a normal calculation
+- [x] Allow a user to click on an entry in the history list to re-run that calculation that will display the answer on the calculator interface like a normal calculation
