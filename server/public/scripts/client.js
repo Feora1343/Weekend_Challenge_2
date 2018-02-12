@@ -81,6 +81,32 @@ function displayHistory(history) {
     for (let i = 0; i < history.length; i++) {
         $('#history-list').prepend('<li>', '<button class="button-history" id="history-button">' + history[i] + '</button>', '</li>');
     }
+    bindClickEvent();
+}
+
+function bindClickEvent() {
+    $(".button-history").click(function() {
+        let textOnButton = $(this).html();
+        let textAsArray = textOnButton.split(' ');
+        // Splits using space as a delimiter, now textAsArray = ['1', '+', '1']
+        let number1 = textAsArray[0];
+        let number2 = textAsArray[2];
+        let moreOperators = textAsArray[1];
+        $('#first').val(number1);
+        $('#second').val(number2);
+        // (choose which operation button to click with an if statement or a switch on operation)
+        if (moreOperators == '+') {
+            $('#addition-button').click();
+        } else if (moreOperators == '-') {
+            $('#subtraction-Button').click();
+        } else if (moreOperators == '*') {
+            $('#multiplication-button').click();
+        } else {
+            $('#division-button').click();
+        }
+        $('#equals-button').click();
+        // (trigger a click on that button)
+    });
 }
 
 // More ajax getting stuff, this time the history
