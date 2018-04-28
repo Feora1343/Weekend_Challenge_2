@@ -1,5 +1,4 @@
-# Welcome to your second weekend challenge!
-We are going to be building a calculator application using jQuery, Node, and Express!!
+# Calculator Project
 
 The logic for the calculator needs to be implemented on the server. The client side will take in the values (in 2 input text fields) and the type of mathematical operation (selected using a button on the DOM). Each of the numerical values and type of mathematical operation will be bundled up in an object and then sent to the server via a POST. So when the object is sent, it should look something like this:
 
@@ -27,14 +26,19 @@ History:
 4 * 3 = 12
 3 + 6 = 9
 ```
+## What Are We Building It With?
 
-# HARD MODE:
-Convert the input fields for the two values to Buttons. So the experience would allow the user to click on a numerical button, then a mathematical operation, then a numerical button again. Then have an equal button that sends all of the information to the server.
-
-# PRO MODES:
-Allow a user to clear the history by clicking on a button. Technically this shouldn't be a GET or a POST. Look into making a DELETE request!
-Allow a user to click on an entry in the History list to re-run that calculation. This should display the answer on the calculator interface like a normal calculation.
-Anything else you can think of!
+```          
+,________,         .----------,  _Request_    .---------,         
+|________|       ,'_________,'|   -> | ->   ,'________,'|        
+| HTML 5 |      | jQuery    | |      |      | _______ | |        
+| CSS    |      |           | |      |      | Node.js | |        
+| Boot   | <--  |           | |      |      | Express | |              
+|  strap |      |           | ;   <- | <-   | _______ | ;        
+|________|      |___________|'  _Response_  |_________|'         
+  Client        Client Logic                   Server
+        *Front End*                          *Back End*              
+```
 
 ## Project Scoping and Management
 - [x] Created Git Repo, Setup File Structure, Install node modules Express, Body-Parser
@@ -57,7 +61,7 @@ Anything else you can think of!
 - [x] Make it so the history list so it doesn't load the last items in the array
 
 ## Extra Options
-- [ ] Style website
+- [x] Style website
 - [x] Style buttons
     - [x] Used icomoon font icons to style buttons
 
